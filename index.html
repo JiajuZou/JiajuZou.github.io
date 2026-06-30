@@ -23,9 +23,20 @@
       border-bottom: 1px solid #ddd;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      padding: 0 40px;
+      justify-content: space-between;
+      padding: 0 48px;
       box-sizing: border-box;
+    }
+
+    .welcome {
+      color: #222;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
     }
 
     .topbar a {
@@ -42,12 +53,15 @@
     .container {
       display: flex;
       margin-top: 80px;
-      padding: 40px;
-      gap: 60px;
+      max-width: 1040px;
+      padding: 48px 36px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 48px;
     }
 
     .left {
-      width: 280px;
+      width: 240px;
       flex-shrink: 0;
     }
 
@@ -59,6 +73,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .name {
+      margin-top: 14px;
+      font-size: 22px;
+      font-weight: 600;
+      text-align: center;
     }
 
     .links {
@@ -78,6 +99,7 @@
 
     .right {
       flex: 1;
+      max-width: 720px;
     }
 
     h2 {
@@ -95,11 +117,17 @@
     }
 
     @media (max-width: 768px) {
+      .topbar {
+        padding: 0 20px;
+      }
       .container {
         flex-direction: column;
+        padding: 32px 24px;
+        gap: 32px;
       }
       .left {
         width: 100%;
+        max-width: 280px;
       }
     }
   </style>
@@ -109,8 +137,11 @@
 
   <!-- Top Navigation -->
   <div class="topbar">
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
+    <div class="welcome">Welcome to my website ~</div>
+    <div class="nav">
+      <a href="#about">About</a>
+      <a href="#papers">Papers</a>
+    </div>
   </div>
 
   <div class="container">
@@ -120,6 +151,7 @@
       <div class="photo">
         <span>Your Photo</span>
       </div>
+      <div class="name">Zou Jiaju</div>
 
       <div class="links">
         <a href="https://www.linkedin.com/in/zou-jiaju/" target="_blank">LinkedIn</a>
@@ -158,11 +190,17 @@
         </p>
       </div>
 
-      <!-- PUBLICATIONS -->
-      <div class="section" id="publications">
-        <h2>Publications</h2>
+      <!-- ACADEMIC PAPERS -->
+      <div class="section" id="papers">
+        <h2>Academic Papers</h2>
 
         <!-- 2026 Journal -->
+        <div class="pub">
+          <b>Zou, J.</b>, Yan, R., Du, L.*, Liu, G., Sun, X., & Feng, J. (2026).
+          Near Cut-Off Noise Control Approach via a Converging-Diverging Segment.
+          <i>Journal of Vibration and Acoustics</i>, under review.
+        </div>
+
         <div class="pub">
           Shang, H., <b>Zou, J.</b>, Du, L.*, Zhang, W., Wang, Z., & Sun, X. (2026).
           Unexpected High-Intensity Tone Noise from Wall-Mounted Finite Slitted Airfoil.
