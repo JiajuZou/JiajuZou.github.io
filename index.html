@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zou Jiajun - Personal Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica", "Arial", sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .topbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    .topbar a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .topbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      margin-top: 80px;
+      padding: 40px;
+      gap: 60px;
+    }
+
+    .left {
+      width: 280px;
+      flex-shrink: 0;
+    }
+
+    .photo {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border: 1px solid #ccc;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .links {
+      margin-top: 20px;
+      line-height: 1.9;
+    }
+
+    .links a {
+      display: block;
+      text-decoration: none;
+      color: #2a2a2a;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .pub {
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <div class="topbar">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+  </div>
+
+  <div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="left">
+      <div class="photo">
+        <span>Your Photo</span>
+      </div>
+
+      <div class="links">
+        <a href="https://www.linkedin.com/in/zou-jiaju/" target="_blank">LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Jiaju-Zou?ev=prf_overview" target="_blank">ResearchGate</a>
+        <a href="https://scholar.google.com/citations?user=6OY5mEMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="mailto:zoujj2024@buaa.edu.cn">Email: zoujj2024@buaa.edu.cn</a>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right">
+
+      <!-- ABOUT -->
+      <div class="section" id="about">
+        <h2>About</h2>
+
+        <p>
+          Hi, I am a Master's student in Mechanical Engineering at
+          <a href="https://ev.buaa.edu.cn/" target="_blank">Beihang University (BUAA)</a>.
+          As a member of the Fluid and Acoustic Engineering Laboratory, I am supervised by
+          <a href="https://www.researchgate.net/profile/Lin-Du-20" target="_blank">Prof. Lin Du</a>
+          and am also fortunate to collaborate with
+          <a href="https://www.researchgate.net/profile/Weiguang-Zhang-4" target="_blank">Prof. Weiguang Zhang</a>.
+        </p>
+
+        <p>
+          Prior to this, I obtained my B.Eng. in Aerospace Engineering from the Department of Mechanics and Aerospace Engineering at
+          <a href="https://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>.
+          During my undergraduate studies, I joined the Advanced Aerodynamics and Aeroacoustics Laboratory (A3 Lab),
+          where I worked under the supervision of
+          <a href="https://www.researchgate.net/profile/Yu-Liu-59" target="_blank">Prof. Yu Liu</a>.
+        </p>
+
+        <p>
+          My current research focuses on acoustic engineering, noise control, and duct acoustics.
+        </p>
+      </div>
+
+      <!-- PUBLICATIONS -->
+      <div class="section" id="publications">
+        <h2>Publications</h2>
+
+        <!-- 2026 Journal -->
+        <div class="pub">
+          Shang, H., <b>Zou, J.</b>, Du, L.*, Zhang, W., Wang, Z., & Sun, X. (2026).
+          Unexpected High-Intensity Tone Noise from Wall-Mounted Finite Slitted Airfoil.
+          <i>Aerospace Science and Technology</i>, 177(B), 112295 (JCR Q1).
+          <a href="https://doi.org/10.1016/j.ast.2026.112295" target="_blank">Link</a>
+        </div>
+
+        <!-- 2026 Conference -->
+        <div class="pub">
+          <b>Zou, J.</b>, Du, L., Zhang, W.*, Wang, Z., Yang, M., & Wang, M. (2026).
+          Experimental Study of Ground Reflection and Microphone Installation Effects on Noise Measurements.
+          In <i>Proceedings of the 32nd AIAA/CEAS Aeroacoustics Conference</i>.
+          <a href="https://doi.org/10.2514/6.2026-3551" target="_blank">Link</a>
+        </div>
+
+        <div class="pub">
+          Shang, H., <b>Zou, J.</b>, Du, L., Wang, Z., & Sun, X. (2026).
+          Experimental Investigation of the Aeroacoustics of an Airfoil Undergoing Flow-Induced Vibration.
+          In <i>Proceedings of the 32nd AIAA/CEAS Aeroacoustics Conference</i>.
+          <a href="https://doi.org/10.2514/6.2026-3569" target="_blank">Link</a>
+        </div>
+
+        <!-- 2025 ICSV -->
+        <div class="pub">
+          Wang, Z., Huo, Y., <b>Zou, J.</b>, Du, L., He, X., & Zhang, W. (2025).
+          On the Prediction of Noise Scattering from Dual Ducted Fans by an Airframe.
+          In <i>Proceedings of the 31st International Congress on Sound and Vibration (ICSV31)</i>.
+          <a href="https://iiav.org/content/archives_icsv_last/2025_icsv31/index0e20.html?va=viewpage&vaid=401" target="_blank">Link</a>
+        </div>
+
+        <!-- 2024 Conference -->
+        <div class="pub">
+          Naseer, M. R., Li, L., <b>Zou, J.</b>, Leung, R. C.*, Liu, Y.*, & Maryami, R. (2024).
+          Experimental Study of Deep Cavity Noise Suppression by Surface Compliance.
+          In <i>Proceedings of the 30th AIAA/CEAS Aeroacoustics Conference</i>.
+          <a href="https://doi.org/10.2514/6.2024-3280" target="_blank">Link</a>
+        </div>
+
+        <div class="pub">
+          Li, L., Liu, G., <b>Zou, J.</b>, & Liu, Y. (2024).
+          Experimental Study on Fluid-Structure-Acoustic Interaction of a Cylinder with Flexible Splitter Plates.
+          In <i>Proceedings of the 30th AIAA/CEAS Aeroacoustics Conference</i>.
+          <a href="https://doi.org/10.2514/6.2024-3338" target="_blank">Link</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
