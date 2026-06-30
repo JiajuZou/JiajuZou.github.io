@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zou Jiajun - Personal Page</title>
+  <title>Zou Jiaju - Personal Page</title>
 
   <style>
     body {
@@ -73,6 +73,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
     }
 
     .name {
@@ -149,7 +158,7 @@
     <!-- LEFT COLUMN -->
     <div class="left">
       <div class="photo">
-        <span>Your Photo</span>
+        <img src="assets/photo.jpg" alt="Zou Jiaju" />
       </div>
       <div class="name">Zou Jiaju</div>
 
